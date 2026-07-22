@@ -13,7 +13,6 @@ dependencies = [
     "anyio",
     "httpx",
     "inspect_ai>=0.3.244",
-    "mitmproxy",
     "requests",
 ]
 
@@ -22,6 +21,7 @@ inspect_antigravity = "inspect_antigravity._registry"
 
 [project.optional-dependencies]
 dev = [
+    "mitmproxy",
     "mypy",
     "pytest",
     "ruff",
