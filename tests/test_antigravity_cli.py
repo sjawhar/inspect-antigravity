@@ -23,7 +23,7 @@ def _antigravity_module() -> ModuleType:
 def test_resolve_mcp_servers_stdio() -> None:
     agent_module = _antigravity_module()
     server = MCPServerConfigStdio(
-        name="taiga-mcp",
+        name="example-mcp",
         command="/opt/venv/bin/browser_injections",
         args=["mcp"],
     )
@@ -33,7 +33,7 @@ def test_resolve_mcp_servers_stdio() -> None:
     assert result == (
         "{\n"
         '  "mcpServers": {\n'
-        '    "taiga-mcp": {\n'
+        '    "example-mcp": {\n'
         '      "command": "/opt/venv/bin/browser_injections",\n'
         '      "args": [\n'
         '        "mcp"\n'
